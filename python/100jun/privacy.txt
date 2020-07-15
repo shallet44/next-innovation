@@ -1,0 +1,4 @@
+A, i = map(int, input().split())
+i = i-1
+print(A * i + 1)
+

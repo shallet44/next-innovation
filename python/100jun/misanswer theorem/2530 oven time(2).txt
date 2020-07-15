@@ -1,0 +1,15 @@
+t, m, c = map(int, input().split())
+p = int(input())
+
+t = t + (p // 3600)
+m = m + (p % 3600) // 60
+c = c + (p % 60)
+if c >= 60:
+    m = m + (c // 60)
+    c = c - 60
+if m >= 60:
+    t = t + (m // 60)
+    m = m - 60
+if t >= 24:
+    t = t % 24
+print(t, m, c)
