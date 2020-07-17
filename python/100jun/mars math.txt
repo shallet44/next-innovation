@@ -1,0 +1,15 @@
+T = int(input())
+for _ in range(1, T+1):
+    A = list(map(str, input().split()))
+    answer = 0
+    for i in range(len(A)):
+        if i == 0:
+            answer += float(A[i])
+        else:
+            if A[i] == "@":
+                answer *= 3
+            elif A[i] == "%":
+                answer += 5
+            elif A[i] == "#":
+                answer -= 7
+    print("%.2f" % answer)

@@ -1,0 +1,9 @@
+a = int(input())
+b = str(input())
+c = int(input())
+if b == "*":
+    b = a * c
+    print(b)
+elif b == "+":
+    b = a + c
+    print(b)

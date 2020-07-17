@@ -1,0 +1,8 @@
+T = int(input())
+for _ in range(T):
+    repeat, y = input().split()
+    repeat = int(repeat)
+    y = list(y)
+    for i in y:
+        print(i*repeat, end='')
+    print()
