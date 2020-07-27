@@ -1,0 +1,17 @@
+t = int(input())
+A = []
+T = []
+for _ in range(t):
+    a, b, c = map(int, input().split())
+    if a == b == c:
+        T.append(10000 + a * 1000)
+    elif a == b or a == c:
+        T.append(1000 + a * 100)
+    elif c == b:
+        T.append(1000 + c * 100)
+    else:
+        A = [a, b, c]
+        A.sort()
+        T.append(A[2] * 100)
+T.sort(reverse=True)
+print(T[0])

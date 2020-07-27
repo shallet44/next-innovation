@@ -1,0 +1,12 @@
+A = []
+B = []
+for _ in range(3):
+    a, b = map(int, input().split())
+    A.append(a)
+    B.append(b)
+for i in range(3):
+    if A.count(A[i]) == 1:
+        a = A[i]
+    elif B.count(B[i]) == 1:
+        b = B[i]
+print(a, b)
