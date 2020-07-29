@@ -1,0 +1,12 @@
+T = int(input())
+for _ in range(T):
+    a = str(input())
+    ans = 0
+    adder = 1
+    for i in range(len(a)):
+        if a[i] == "O":
+            ans += adder
+            adder += 1
+        else:
+            adder = 1
+    print(ans)
