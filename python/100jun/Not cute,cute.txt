@@ -1,0 +1,9 @@
+T = int(input())
+A = []
+for _ in range(T):
+    a = int(input())
+    A.append(a)
+if A.count(1) > A.count(0):
+    print("Junhee is cute!")
+else:
+    print("Junhee is not cute!")

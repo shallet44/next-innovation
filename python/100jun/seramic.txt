@@ -1,0 +1,10 @@
+a = str(input())
+b = 10
+i = 1
+for _ in range(len(a) - 1):
+     if a[i] == a[i - 1]:
+          b = b + 5
+     else:
+          b = b + 10
+     i += 1
+print(b)

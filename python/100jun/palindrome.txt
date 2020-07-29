@@ -1,0 +1,11 @@
+a = str(input())
+b = []
+i = 1
+for _ in range(len(a)):
+    b.append(a[len(a) - i])
+    i += 1
+b = ''.join(b)
+if a == b:
+    print(1)
+else:
+    print(0)
