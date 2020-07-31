@@ -1,0 +1,14 @@
+while True:
+    a = int(input())
+    b = []
+    if a == -1:
+        break
+    for i in range(1, a):
+        if a % i == 0:
+            b.append(i)
+    if a == sum(b):
+        print(a, '= ', end='')
+        b = list(map(str, b))
+        print(' + '.join(b))
+    else:
+        print(a, "is NOT perfect.")
