@@ -10,4 +10,3 @@ if A == B:
 else:
     print(sum(A))
     print(min(A))
-
